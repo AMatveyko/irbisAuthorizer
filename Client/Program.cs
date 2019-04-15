@@ -66,8 +66,6 @@ namespace Client
             {
                 Help();
             }
-            if (_debug)
-                Console.ReadLine();
         }
         private static void Access(String[] args)
         {
