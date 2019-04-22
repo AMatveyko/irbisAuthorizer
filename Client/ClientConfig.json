@@ -1,0 +1,10 @@
+{
+  "Host": "10.0.0.69",
+  "Port": "6666",
+  "UserName": "Wi-Fi",
+  "UserPwd": "Wi-Fi",
+  "DbName": "RDR",
+  "NameField": "30",
+  "PwdField": "22",
+  "Debug": "0"
+}

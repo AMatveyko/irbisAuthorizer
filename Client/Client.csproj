@@ -10,4 +10,10 @@
     <ProjectReference Include="..\irbisAuthorizer\irbisAuthorizer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ClientConfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

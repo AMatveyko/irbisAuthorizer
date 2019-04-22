@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 
-namespace irbisAuthorizer
+namespace irbisAuthorizer.Model
 {
-    internal class Parameters
+    public class Parameters
     {
         private readonly IPAddress _host;
         private readonly int _port;

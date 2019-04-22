@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
+using irbisAuthorizer.Model;
 using Microsoft.Extensions.Configuration;
 
-namespace irbisAuthorizer
+namespace Client
 {
-    internal static class AppConfig
+
+    public static class AppConfig
     {
+
+        private static String _configFile = "ClientConfig.json";
+
         private static String _error = $"-> ModulName: AppConfig,";
         public static String GetError() => _error;
 
-        private static String _configFile = "config.json";
+        //private static String _configFile = "config.json";
         private static String _hostKey = "Host";
         private static String _port = "Port";
         private static String _userNameKey = "UserName";
@@ -54,6 +59,8 @@ namespace irbisAuthorizer
             }
             else
             {
+                _error += $" AppConfig.GetParameters: File not found";
+                isOk = false;
                 parameters = null;
             }
             

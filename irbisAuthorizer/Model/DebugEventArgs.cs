@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace irbisAuthorizer
+namespace irbisAuthorizer.Model
 {
     public class DebugEventArgs : EventArgs
     {
@@ -13,6 +13,10 @@ namespace irbisAuthorizer
         public DebugEventArgs(List<String> debugMessages)
         {
             _debugMessages = debugMessages;
+        }
+        public DebugEventArgs(String debugMessages)
+        {
+            _debugMessages = new List<string>() { debugMessages };
         }
     }
 }
